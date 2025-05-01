@@ -1,0 +1,27 @@
+name: manifest_info_reader
+description: "Flutter plugin to read iOS info.plist and Android AndroidManifest.xml, providing a unified API for app metadata access. 支援跨平台原生設定讀取。"
+version: 1.0.0
+homepage: "https://github.com/neokn/manifest_info_reader"
+
+environment:
+  sdk: ^3.7.2
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: pro.modernwizard.manifest_info_reader
+        pluginClass: ManifestInfoReaderPlugin
+      ios:
+        pluginClass: ManifestInfoReaderPlugin
